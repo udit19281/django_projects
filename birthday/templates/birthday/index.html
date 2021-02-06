@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Birthday</title>
+    <link rel="stylesheet" href="{% static 'birthday/styles.css' %}">
+</head>
+<body>
+   
+    {% if birthday %}
+        <h1>YES</h1>
+    {%else%}
+        <h1>NO</h1>
+    {%endif%}
+    <h1>{{ day }}/{{month}}/2021</h1>
+</body>
+</html>
